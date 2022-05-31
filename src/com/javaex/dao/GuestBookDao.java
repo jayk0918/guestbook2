@@ -62,7 +62,7 @@ public class GuestBookDao {
 			query += " select no ";
 			query += "     	 ,name ";
 			query += "       ,content ";
-			query += "       ,reg_date ";
+			query += "       ,to_char(reg_date, 'YYYY-MM-DD HH24:MM:SS') reg_date";
 			query += " from guestbook ";
 			
 			pstmt = conn.prepareStatement(query);
@@ -96,7 +96,7 @@ public class GuestBookDao {
 		try {
 			String query = "";
 			query += " insert into guestbook ";
-			query += " values(seq_guestbook_no.nextval, ?, ?, ?, to_date(sysdate, 'YYYY-MM-DD')) ";
+			query += " values(seq_guestbook_no.nextval, ?, ?, ?, sysdate ) ";
 
 			pstmt = conn.prepareStatement(query);
 			pstmt.setString(1, guestBookVo.getName());
