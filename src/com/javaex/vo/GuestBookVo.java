@@ -33,6 +33,8 @@ public class GuestBookVo {
 		this.content = content;
 	}
 
+	
+
 	public GuestBookVo(int no, String name, String content, String date) {
 		this.no = no;
 		this.name = name;

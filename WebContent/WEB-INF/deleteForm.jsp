@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<form action = "./gbc" method = "get">
+<form action = "./gbc" method = "post">
 	<label for = "password">비밀번호</label>
 	<input type = "password" name = "password" value = ""></input>
 	<input type = "hidden" name = "action" value = "delete"></input>
@@ -22,7 +22,7 @@
 
 
 
-<a href = "./gbc?action=addList">메인으로 돌아가기</a>
+<a href = "/guestbook2/gbc?action=addList">메인으로 돌아가기</a>
 
 </body>
 </html>

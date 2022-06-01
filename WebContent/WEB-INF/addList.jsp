@@ -17,7 +17,7 @@
 </head>
 <body>
 
-<form action = "./gbc" method = "get">
+<form action = "./gbc" method = "post">
 	<table border = '1'>
 	
 	<tr>
